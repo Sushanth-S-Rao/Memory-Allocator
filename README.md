@@ -21,8 +21,7 @@ Block *findFreeBlock(size_t size); ~ Dynamic Allocation through searching the av
 
 
 ## Additional Documentation
-To know more about the implementation of functions and working of program, refer the comments above the function. \
-To understand about the Memory Allocation, Memory Layout of C, Dynamic Allocation as well implementation of this program, refer to the article I have written [here](https://medium.com/@sushanthsrao/memory-allocation-in-c-and-custom-memory-allocator-program-89fcd5e50c3)
+To know more about the implementation of functions and working of program, refer the comments above the function. To understand about the Memory Allocation, Memory Layout of C, Dynamic Allocation as well implementation of this program, refer to the article I have written [here](https://medium.com/@sushanthsrao/memory-allocation-in-c-and-custom-memory-allocator-program-89fcd5e50c3)
 
 ## License
 [MIT Licence](https://choosealicense.com/licenses/mit/#)
