@@ -29,7 +29,6 @@ static auto top = heapStart;				// Current top. Updated on each allocation
 // Functions Declared
 Block *requestFromOS(size_t size);
 Block *getHeader(word_t *data);
-Block *firstFit(size_t size);
 Block *findFreeBlock(size_t size);
 
 
