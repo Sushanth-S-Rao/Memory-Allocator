@@ -9,8 +9,9 @@ This is a memory allocator program that dynamically allocates and deallocates th
 - Memory Layout of C Program
 
 ## Functions Used
+| *Function*                              | *Use* |
+|:--------------------------------      |:-------------------------|
 | struct Block{};                        | Structure of Memory Block |
-|:--------------------------------:      | :-------------------------: |
 | using word_t = intptr_t                | Machine specific word size |
 | word_t *alloc(size_t size);            | Dynamic Allocator function |
 | inline size_t align(size_t n);         | Alignment or Padding function |
