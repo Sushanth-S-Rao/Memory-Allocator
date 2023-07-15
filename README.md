@@ -9,15 +9,16 @@ This is a memory allocator program that dynamically allocates and deallocates th
 - Memory Layout of C Program
 
 ## Functions Used
-struct Block{};   | Structure of Memory Block \
-using word_t = intptr_t   | Machine specific word size \
-word_t *alloc(size_t size);   | Dynamic Allocator function \
-inline size_t align(size_t n);  | Alignment or Padding function \
-inline size_t allocSize(size_t size);   | Returns total allocation size \
-void free(word_t *data);  | Function to Free the mapped heap \
-Block *requestFromOS(size_t size);  | Function that requests the specified size in HEAP to be allocated using sbrk() call \
-Block *getHeader(word_t *data);   | Returns Header of user data \
-Block *findFreeBlock(size_t size);  | Dynamic Allocation through searching the available block 
+| struct Block{};                        | Structure of Memory Block |
+|:--------------------------------:      | :-------------------------: |
+| using word_t = intptr_t                | Machine specific word size |
+| word_t *alloc(size_t size);            | Dynamic Allocator function |
+| inline size_t align(size_t n);         | Alignment or Padding function |
+| inline size_t allocSize(size_t size);  | Returns total allocation size |
+| void free(word_t *data);               | Function to Free the mapped heap |
+| Block *requestFromOS(size_t size);     | Function that requests the specified size in HEAP to be allocated using sbrk() call |
+| Block *getHeader(word_t *data);        | Returns Header of user data |
+| Block *findFreeBlock(size_t size);     | Dynamic Allocation through searching the available block | 
 
 
 ## Additional Documentation
